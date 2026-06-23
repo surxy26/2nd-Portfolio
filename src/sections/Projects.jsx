@@ -4,6 +4,7 @@ import SectionTitle from '../components/ui/SectionTitle'
 import Reveal from '../components/effects/Reveal'
 import projects from '../data/projects'
 
+
 function Projects() {
   return (
     <section id="projects" className="section-padding">
@@ -18,8 +19,11 @@ function Projects() {
           {projects.map((project, index) => (
             <Reveal key={project.title} delay={index * 0.08}>
               <div className="card-modern flex h-full flex-col">
-                <div className="mb-5 h-44 rounded-2xl border border-white/10 bg-gradient-to-br from-cyan-500/10 via-white/5 to-violet-500/10" />
-
+          <img
+            src={project.image}
+            alt={project.title}
+            className="mb-5 h-44 w-full rounded-2xl border border-white/10 object-cover"
+          />
                 <h3 className="text-2xl font-bold">{project.title}</h3>
                 <p className="mt-3 flex-grow leading-7 text-neutral-400">
                   {project.description}

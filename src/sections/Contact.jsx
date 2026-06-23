@@ -23,8 +23,8 @@ function Contact() {
               </p>
 
               <div className="mt-6 space-y-3 text-neutral-300">
-                <p>Email: your@email.com</p>
-                <p>Location: Philippines</p>
+                <p>Email: xyruspedido26@gmail.com</p>
+                <p>Location: Project 4, Quezon City</p>
               </div>
 
               <div className="mt-6">

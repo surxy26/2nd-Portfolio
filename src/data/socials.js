@@ -1,17 +1,17 @@
 const socials = [
   {
     label: 'GitHub',
-    href: 'https://github.com/',
+    href: 'https://github.com/surxy26',
     icon: 'github',
   },
   {
     label: 'Facebook',
-    href: 'https://facebook.com/',
+    href: 'https://www.facebook.com/janxyrusgabriel.pedido',
     icon: 'facebook',
   },
   {
     label: 'Email',
-    href: 'mailto:your@email.com',
+    href: 'mailto:xyruspedido26@gmail.com',
     icon: 'email',
   },
 ]

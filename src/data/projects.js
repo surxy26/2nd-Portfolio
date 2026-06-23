@@ -1,27 +1,35 @@
+import technoshine from "../assets/images/technoshine.png"
+import oksi from "../assets/images/oksi.png"
+import eagles from "../assets/images/eagles.png"
+
+
+
+
 const projects = [
   {
-    title: 'AgroPulse',
+    title: 'Oksi',
     description:
       'An IoT-based automated irrigation and environmental monitoring system for urban farming using ESP32, multiple sensors, and a mobile app.',
-    tech: ['ESP32', 'IoT', 'React Native', 'Firebase'],
+    tech: ['ESP32', 'IoT', 'React Native', 'Expo Go'],
     live: '#',
-    github: '#',
+    image: oksi,
+    github: 'https://github.com/surxy26/Oksi',
   },
   {
-    title: 'Portfolio Website',
+    title: 'Ang Agila',
     description:
-      'A sleek personal portfolio website built with React, Tailwind CSS, and Vite with modern UI transitions.',
-    tech: ['React', 'Tailwind', 'Vite'],
-    live: '#',
-    github: '#',
+      'A website for the Fraternal Order of Eagles keeps members updated on the latest news regarding the brotherhood. This website is accessible via QR Code on the back of the Eagles membership ID',
+    tech: ['PHP', 'MySQL', 'Laravel'],
+    image: eagles,
+    live: 'https://tfoepe-inc.com.ph/',
   },
   {
-    title: 'Admin Dashboard',
+    title: 'Technoshine',
     description:
-      'A responsive dashboard interface for managing records, content, and reports with clean layout and reusable components.',
+      'Technoshine is a digital showcase of milestone projects, innovative outputs, and valued customers through the years. Customers can explore their portfolio and connect with them directly to start new collaborations.',
     tech: ['PHP', 'MySQL', 'JavaScript'],
-    live: '#',
-    github: '#',
+    image: technoshine,
+    live: 'https://technoshineph.com/',
   },
 ]
 

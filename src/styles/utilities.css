@@ -1,0 +1,15 @@
+.section-padding {
+  @apply px-6 py-20 md:px-10 lg:px-16;
+}
+
+.container-width {
+  @apply mx-auto max-w-7xl;
+}
+
+.text-muted {
+  @apply text-neutral-400;
+}
+
+.glass {
+  @apply border border-white/10 bg-white/5 backdrop-blur-md;
+}

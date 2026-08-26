@@ -26,16 +26,22 @@ const posterWorks = [
       "A cultural campaign poster created for Sinag Foundation's Buwan ng Wika initiative, using vibrant colors, Filipino-inspired elements, and dynamic typography to capture the spirit of the celebration.",
   },
   {
-    src: "/graphics/Sunday Invite.png",
-    title: "Sunday Invite",
+    src: "/graphics/QCGolden.jpg",
+    title: "Quezon Day Poster for Golden Globe",
     description:
-      "A digital invitation designed for Sunday activities and announcements, with a clean layout and clear visual hierarchy to make the event details easy to read.",
+      "A cultural campaign poster created for Golden Globe's Quezon Day celebration.",
   },
   {
-    src: "/graphics/Sunday Invite2.png",
-    title: "Sunday Invite Version 2",
+    src: "/graphics/QCNadrems.jpg",
+    title: "Quezon Day Poster for NADREMS Inc",
     description:
-      "An alternate version of the Sunday invitation exploring a different layout, typography, and visual hierarchy while maintaining a clear and accessible presentation.",
+      "A cultural campaign poster created for NADREMS Inc.'s Quezon Day celebration.",
+  },
+  {
+    src: "/graphics/QCSinag.jpg",
+    title: "Quezon Day Poster for Sinag Foundation",
+    description:
+      "A cultural campaign poster created for Sinag Foundation's Quezon Day celebration.",
   },
   {
     src: "/graphics/Ministry.png",
@@ -55,11 +61,30 @@ const posterWorks = [
     description:
       "A commemorative graphic created for Sinag Foundation's Ninoy Aquino Day campaign, using historical imagery and a strong visual composition to honor the significance of the occasion.",
   },
+
   {
     src: "/graphics/sinag.jpg",
     title: "Sinag Foundation Magazine Cover",
     description:
       "A magazine cover designed for a recent Sinag Foundation project, combining editorial-style composition, prominent typography, and visual storytelling to create an engaging cover design.",
+  },
+  {
+    src: "/graphics/GGCover.jpg",
+    title: "Golden Globe Annual Awards Magazine Cover",
+    description:
+      "A magazine cover designed for the Golden Globe Annual Awards, combining editorial-style composition, prominent typography, and visual storytelling to create an engaging cover design.",
+  },
+    {
+    src: "/graphics/Sunday Invite.png",
+    title: "Sunday Invite",
+    description:
+      "A digital invitation designed for Sunday activities and announcements, with a clean layout and clear visual hierarchy to make the event details easy to read.",
+  },
+  {
+    src: "/graphics/Sunday Invite2.png",
+    title: "Sunday Invite Version 2",
+    description:
+      "An alternate version of the Sunday invitation exploring a different layout, typography, and visual hierarchy while maintaining a clear and accessible presentation.",
   },
 ]
 
@@ -83,11 +108,11 @@ function GraphicWorks() {
                 let orientation
 
                 if (img.naturalWidth > img.naturalHeight) {
-                  orientation = 0 // Landscape
+                  orientation = 0
                 } else if (img.naturalWidth === img.naturalHeight) {
-                  orientation = 1 // Square
+                  orientation = 1
                 } else {
-                  orientation = 2 // Portrait
+                  orientation = 2
                 }
 
                 resolve({
@@ -106,8 +131,8 @@ function GraphicWorks() {
               }
 
               img.src = work.src
-            })
-        )
+            }),
+        ),
       )
 
       // Landscape → Square → Portrait
@@ -191,7 +216,7 @@ function GraphicWorks() {
           <div
             className={`overflow-hidden transition-all duration-500 ${
               open
-                ? "max-h-[6000px] opacity-100"
+                ? "max-h-[20000px] opacity-100"
                 : "max-h-0 opacity-0"
             }`}
           >
@@ -202,6 +227,7 @@ function GraphicWorks() {
                   delay={index * 0.06}
                 >
                   <div className="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03] transition-all duration-300 hover:border-cyan-400/30 hover:shadow-[0_20px_60px_rgba(6,182,212,0.12)]">
+
                     {/* Image */}
                     <div className="flex w-full items-center justify-center overflow-hidden bg-black/20">
                       <img
@@ -229,6 +255,7 @@ function GraphicWorks() {
                         </p>
                       </div>
                     </div>
+
                   </div>
                 </Reveal>
               ))}

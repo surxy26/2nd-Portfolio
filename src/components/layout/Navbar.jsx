@@ -59,7 +59,7 @@ function Navbar() {
                     Xyrus<span className="text-cyan-400">.</span>
                   </div>
                   <div className="text-xs text-neutral-400">
-                    Frontend Developer
+                    Web & App Developer | Graphic Designer
                   </div>
                 </div>
               </a>
